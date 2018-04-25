@@ -1,0 +1,39 @@
+# Always ignore
+.DS_Store
+*.swp
+.ipynb_checkpoints/
+*.pyc
+*.html
+*.docx
+*.pdf
+*.log
+*.plan
+*.top
+tags
+.initialized
+local.mk
+*.pbs.o*
+*.pbs.e*
+*.temp
+*.temp.labels
+core.?????
+
+# Ignore these directories
+raw/
+ref/
+res/
+seq/
+nb/profile_default/*
+fig/*
+.venv/*
+packages/*
+build/
+mothur.*.logfile
+src/*
+.Rproj.user
+
+# But white-list these files
+!nb/profile_default/*config.py
+!doc/static/*
+!raw/hplc/*
+!raw/hplc/proto/*

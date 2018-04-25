@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#PBS -A schmidti_fluxm
+#PBS -q fluxm
+#PBS -l nodes=1:ppn=2,pmem=24gb
+#PBS -l walltime=01:00:00:00,qos=flux
+#PBS -V
+#PBS -I
+

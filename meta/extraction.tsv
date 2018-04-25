@@ -1,0 +1,176 @@
+extraction_id	sample_id	weight	hydrated_weight	volume	spike_id	spike_volume	dna_concentration	comments
+EXT-0029	TJL-0025			0.2	SPK-02	10.0	24.71	
+EXT-0031	UT-0132			0.2	SPK-02	10.0	275.16	
+EXT-0032	UM-0016			0.2	SPK-02	10.0	44.08	
+EXT-0037	UM-0030			0.2	SPK-02	10.0	105.03	
+EXT-0040	UM-0025			0.2	SPK-02	10.0	210.13	
+EXT-0041	TJL-0012			0.2	SPK-02	10.0	43.52	
+EXT-0045	UT-0099			0.2	SPK-02	10.0	19.26	
+EXT-0046	UM-0022			0.2	SPK-02	10.0	9.41	
+EXT-0048	UT-0106			0.2	SPK-02	10.0	16.00	
+EXT-0049	UT-0101			0.2	SPK-02	10.0	160.32	
+EXT-0052	TJL-0045			0.2	SPK-02	10.0	21.93	
+EXT-0056	UT-0128			0.2	SPK-02	10.0	133.08	
+EXT-0060	TJL-0032			0.2	SPK-02	10.0	11.70	
+EXT-0062	TJL-0039			0.2	SPK-02	10.0	19.60	
+EXT-0067	UM-0036			0.2	SPK-02	10.0	18.85	
+EXT-0069	UM-0038			0.2	SPK-02	10.0	288.23	
+EXT-0070	UM-0048			0.2	SPK-02	10.0	116.17	
+EXT-0071	UT-0123			0.2	SPK-02	10.0	14.93	
+EXT-0072	UT-0129			0.2	SPK-02	10.0	220.27	
+EXT-0074	UM-0008			0.2	SPK-02	10.0	53.52	
+EXT-0079	TJL-0034			0.2	SPK-02	10.0	64.40	
+EXT-0080	TJL-0023			0.2	SPK-02	10.0	11.76	
+EXT-0081	UT-0119			0.2	SPK-02	10.0	34.85	
+EXT-0083	TJL-0044			0.2	SPK-02	10.0	27.86	
+EXT-0086	UT-0136			0.2	SPK-02	10.0	9.58	
+EXT-0087	UM-0014			0.2	SPK-02	10.0	2.80	
+EXT-0088	UM-0046			0.2	SPK-02	10.0	13.96	
+EXT-0090	TJL-0029			0.2	SPK-02	10.0	10.22	
+EXT-0094	UT-0141			0.2	SPK-02	10.0	16.75	
+EXT-0095	UT-0120			0.2	SPK-02	10.0	27.95	
+EXT-0098	UM-0040			0.2	SPK-02	10.0	6.08	
+EXT-0099	TJL-0022			0.2	SPK-02	10.0	5.16	
+EXT-0100	UT-0118			0.2	SPK-02	10.0	6.35	
+EXT-0102	UM-0004			0.2	SPK-02	10.0	20.21	
+EXT-0105	UT-0111			0.2	SPK-02	10.0	6.82	
+EXT-0107	UT-0113			0.2	SPK-02	10.0	80.63	
+EXT-0108	UT-0121			0.2	SPK-02	10.0	37.76	for design balance, swapped UM-0033 for UT-0121 at EXT-218
+EXT-0110	TJL-0004			0.2	SPK-02	10.0	5.12	
+EXT-0111	UM-0029			0.2	SPK-02	10.0	7.55	
+EXT-0115	TJL-0031			0.2	SPK-02	10.0	45.69	
+EXT-0120	TJL-0021			0.2	SPK-02	10.0	29.80	
+EXT-0123	TJL-0020			0.2	SPK-02	10.0	24.20	
+EXT-0127	TJL-0018			0.2	SPK-02	10.0	16.57	
+EXT-0129	UT-0110			0.2	SPK-02	10.0	27.57	
+EXT-0131	TJL-0028			0.2	SPK-02	10.0	14.93	
+EXT-0134	UM-0044			0.2	SPK-02	10.0	26.78	
+EXT-0137	TJL-0010			0.2	SPK-02	10.0	111.03	
+EXT-0138	TJL-0011			0.2	SPK-02	10.0	43.75	
+EXT-0140	TJL-0016			0.2	SPK-02	10.0	19.59	
+EXT-0142	UT-0137			0.2	SPK-02	10.0	249.07	
+EXT-0143	UM-0018			0.2	SPK-02	10.0	17.93	
+EXT-0145	UT-0097			0.2	SPK-02	10.0	20.60	
+EXT-0151	TJL-0027			0.2	SPK-02	10.0	139.03	
+EXT-0153	UM-0013			0.2	SPK-02	10.0	12.46	
+EXT-0155	UT-0142			0.2	SPK-02	10.0	59.52	
+EXT-0159	UT-0115			0.2	SPK-02	10.0	163.04	
+EXT-0161	TJL-0008			0.2	SPK-02	10.0	40.65	
+EXT-0162	TJL-0038			0.2	SPK-02	10.0	19.36	
+EXT-0165	UT-0103			0.2	SPK-02	10.0	27.90	
+EXT-0166	UT-0143			0.2	SPK-02	10.0	16.66	
+EXT-0168	UM-0041			0.2	SPK-02	10.0	5.76	
+EXT-0169	UT-0135			0.2	SPK-02	10.0	28.87	
+EXT-0170	TJL-0035			0.2	SPK-02	10.0	64.68	
+EXT-0172	TJL-0001			0.2	SPK-02	10.0	10.03	
+EXT-0173	UT-0140			0.2	SPK-02	10.0	4.18	
+EXT-0176	UM-0034			0.2	SPK-02	10.0	3.18	
+EXT-0177	TJL-0037			0.2	SPK-02	10.0	35.46	
+EXT-0179	TJL-0006			0.2	SPK-02	10.0	12.55	
+EXT-0181	UM-0011			0.2	SPK-02	10.0	12.19	
+EXT-0184	UM-0017			0.2	SPK-02	10.0	65.02	
+EXT-0186	TJL-0017			0.2	SPK-02	10.0	22.62	
+EXT-0188	TJL-0007			0.2	SPK-02	10.0	7.97	
+EXT-0190	UM-0006			0.2	SPK-02	10.0	38.23	
+EXT-0192	UT-0125			0.2	SPK-02	10.0	51.09	
+EXT-0194	UT-0102			0.74	SPK-02	10.0	12.49	some spillage during homogenization
+EXT-0195	TJL-0046			0.93	SPK-02	10.0	8.02	some spillage during homogenization
+EXT-0197	UT-0131			0.63	SPK-02	10.0	71.60	
+EXT-0198	UM-0045			0.36	SPK-02	10.0	5.15	
+EXT-0199	UT-0124			0.12	SPK-02	10.0	7.20	volume too low for filtering
+EXT-0203	TJL-0042			0.74	SPK-02	10.0	6.06	
+EXT-0204	UT-0134			0.54	SPK-02	10.0	48.31	
+EXT-0207	TJL-0033			0.17	SPK-02	10.0	3.10	
+EXT-0208	UT-0109			0.66	SPK-02	10.0	3.39	
+EXT-0210	UT-0139			0.21	SPK-02	10.0	1.59	
+EXT-0214	UT-0105			0.40	SPK-02	10.0	106.64	
+EXT-0218	UM-0033			0.45	SPK-02	10.0	296.34	for design balance, swapped UT-0121 for UM-0033 at EXT-108
+EXT-0219	UM-0019			1.20	SPK-02	10.0	57.16	
+EXT-0220	UM-0001			0.53	SPK-02	10.0	481.21	
+EXT-0224	TJL-0019			0.95	SPK-02	10.0	194.66	
+EXT-0226	UT-0144			0.33	SPK-02	10.0	29.65	
+EXT-0227	UT-0104			0.31	SPK-02	10.0	253.83	
+EXT-0230	TJL-0036			1.11	SPK-02	10.0	306.83	
+EXT-0231	TJL-0013			0.38	SPK-02	10.0	20.36	
+EXT-0232	TJL-0026			0.50	SPK-02	10.0	140.82	
+EXT-0233	UT-0098			0.76	SPK-02	10.0	52.71	
+EXT-0235	UT-0126			0.22	SPK-02	10.0	19.14	
+EXT-0236	UT-0138			0.61	SPK-02	10.0	39.45	
+EXT-0237	UT-0122			0.43	SPK-02	10.0	11.74	
+EXT-0238	UT-0116			0.30	SPK-02	10.0	341.71	
+EXT-0240	TJL-0030			0.89	SPK-02	10.0	47.15	
+EXT-0243	UT-0100			1.23	SPK-02	10.0	281.98	
+EXT-0246	UT-0108			0.88	SPK-02	10.0	198.54	
+EXT-0250	UT-0114			0.49	SPK-02	10.0	135.11	
+EXT-0253	UT-0117			0.64	SPK-02	10.0	311.72	
+EXT-0255	UT-0127			0.64	SPK-02	10.0	102.81	
+EXT-0256	UT-0130			0.64	SPK-02	10.0	85.77	
+EXT-0257	TJL-0024			0.32	SPK-02	10.0	51.98	
+EXT-0259	TJL-0005			0.26	SPK-02	10.0	122.48	
+EXT-0264	TJL-0003			1.58	SPK-02	10.0	73.30	
+EXT-0265	TJL-0040			0.36	SPK-02	10.0	4.74	
+EXT-0266	UT-0112			0.38	SPK-02	10.0	5.36	
+EXT-0271	UM-0021			0.47	SPK-02	10.0	19.11	
+EXT-0274	TJL-0009			0.42	SPK-02	10.0	48.83	
+EXT-0275	UM-0012			0.36	SPK-02	10.0	2.86	
+EXT-0278	TJL-0047			0.76	SPK-02	10.0	35.23	
+EXT-0279	UT-0107			0.58	SPK-02	10.0	78.12	
+EXT-0283	UM-0039			0.82	SPK-02	10.0	4.69	
+EXT-0285	UM-0031			0.44	SPK-02	10.0	4.37	
+EXT-0293	TJL-0048			0.27	SPK-02	10.0	63.15	
+EXT-0294	UM-0049			0.49	SPK-02	10.0	6.05	
+EXT-0296	UM-0047			1.60	SPK-02	10.0	45.35	
+EXT-0297	TJL-0015			0.65	SPK-02	10.0	5.69	
+EXT-0298	TJL-0002			0.59	SPK-02	10.0	6.30	
+EXT-0299	UM-0005			0.39	SPK-02	10.0	2.79	
+EXT-0300	TJL-0041			0.57	SPK-02	10.0	3.52	
+EXT-0301	UT-0133			0.35	SPK-02	10.0	3.48	
+EXT-0302	TJL-0043			1.15	SPK-02	10.0	42.94	
+EXT-0393	UM-0024	0.073	0.102		SPK-02	10.0	101.01	split from EXT-0038 and spiked before DNA extraction
+EXT-0394	UM-0020	0.046	0.073		SPK-02	10.0	28.37	split from EXT-0082 and spiked before DNA extraction
+EXT-0395	UM-0010	0.02	0.047		SPK-02	10.0	12.62	split from EXT-0106 and spiked before DNA extraction
+EXT-0396	UM-0042	0.03	0.058		SPK-02	10.0	44.83	split from EXT-0116 and spiked before DNA extraction
+EXT-0397	UM-0015	0.037	0.073		SPK-02	10.0	26.97	split from EXT-0128 and spiked before DNA extraction
+EXT-0398	UM-0037	0.029	0.062		SPK-02	10.0	11.52	split from EXT-0150 and spiked before DNA extraction
+EXT-0399	UM-0043	0.046	0.068		SPK-02	10.0	239.07	split from EXT-0152 and spiked before DNA extraction
+EXT-0400	UM-0003	0.017	0.04		SPK-02	10.0	52.39	split from EXT-0154 and spiked before DNA extraction
+EXT-0401	UM-0035	0.209	0.279		SPK-02	10.0	220.48	split from EXT-0160 and spiked before DNA extraction
+EXT-0402	UM-0007	0.022	0.054		SPK-02	10.0	46.35	split from EXT-0163 and spiked before DNA extraction
+EXT-0403	UM-0023	0.015	0.035		SPK-02	10.0	30.58	split from EXT-0209 and spiked before DNA extraction
+EXT-0404	UM-0026	0.045	0.106		SPK-02	10.0	102.68	split from EXT-0222 and spiked before DNA extraction
+EXT-0405	UM-0028	0.027	0.053		SPK-02	10.0	5.65	split from EXT-0263 and spiked before DNA extraction
+EXT-0406	UM-0009	0.033	0.046		SPK-02	10.0	12.02	split from EXT-0287 and spiked before DNA extraction
+EXT-0407	UM-0027	0.066	0.132		SPK-02	10.0	4.10	split from EXT-0290 and spiked before DNA extraction
+EXT-0408	UM-0032	0.024	0.043		SPK-02	10.0	8.78	split from EXT-0292 and spiked before DNA extraction
+EXT-0417	UM-0024	0.023	0.032				32.23	split from EXT-0038 and not spiked before DNA extraction
+EXT-0418	UM-0020	0.016	0.026				22.20	split from EXT-0082 and not spiked before DNA extraction
+EXT-0419	UM-0010	0.009	0.021				9.28	split from EXT-0106 and not spiked before DNA extraction
+EXT-0420	UM-0042	0.008	0.015				34.20	split from EXT-0116 and not spiked before DNA extraction
+EXT-0421	UM-0015	0.01	0.02				5.75	split from EXT-0128 and not spiked before DNA extraction
+EXT-0422	UM-0037	0.01	0.022				1.54	split from EXT-0150 and not spiked before DNA extraction
+EXT-0423	UM-0043	0.022	0.032				60.10	split from EXT-0152 and not spiked before DNA extraction
+EXT-0424	UM-0003	0.005	0.013				8.01	split from EXT-0154 and not spiked before DNA extraction
+EXT-0425	UM-0035	0.03	0.04				24.94	split from EXT-0160 and not spiked before DNA extraction
+EXT-0426	UM-0007	0.005	0.012				4.16	split from EXT-0163 and not spiked before DNA extraction
+EXT-0427	UM-0023	0.005	0.011				14.84	split from EXT-0209 and not spiked before DNA extraction
+EXT-0428	UM-0026	0.007	0.017				14.76	split from EXT-0222 and not spiked before DNA extraction
+EXT-0429	UM-0028	0.01	0.019				3.94	split from EXT-0263 and not spiked before DNA extraction
+EXT-0430	UM-0009	0.02	0.028				11.39	split from EXT-0287 and not spiked before DNA extraction
+EXT-0431	UM-0027	0.015	0.031				4.63	split from EXT-0290 and not spiked before DNA extraction
+EXT-0432	UM-0032	0.008	0.014				5.48	split from EXT-0292 and not spiked before DNA extraction
+EXT-0038	UM-0024			0.2				hydrated sample split into EXT-0393 and EXT-0417 before extracting for sequencing
+EXT-0082	UM-0020			0.2				hydrated sample split into EXT-0394 and EXT-0418 before extracting for sequencing
+EXT-0106	UM-0010			0.2				hydrated sample split into EXT-0395 and EXT-0419 before extracting for sequencing
+EXT-0116	UM-0042			0.2				hydrated sample split into EXT-0396 and EXT-0420 before extracting for sequencing
+EXT-0128	UM-0015			0.2				hydrated sample split into EXT-0397 and EXT-0421 before extracting for sequencing
+EXT-0150	UM-0037			0.2				hydrated sample split into EXT-0398 and EXT-0422 before extracting for sequencing
+EXT-0152	UM-0043			0.2				hydrated sample split into EXT-0399 and EXT-0423 before extracting for sequencing
+EXT-0154	UM-0003			0.2				hydrated sample split into EXT-0400 and EXT-0424 before extracting for sequencing
+EXT-0160	UM-0035			0.4				hydrated sample split into EXT-0401 and EXT-0425 before extracting for sequencing
+EXT-0163	UM-0007			0.2				hydrated sample split into EXT-0402 and EXT-0426 before extracting for sequencing
+EXT-0209	UM-0023			0.21				hydrated sample split into EXT-0403 and EXT-0427 before extracting for sequencing
+EXT-0222	UM-0026			0.54				hydrated sample split into EXT-0404 and EXT-0428 before extracting for sequencing
+EXT-0263	UM-0028			0.27				hydrated sample split into EXT-0405 and EXT-0429 before extracting for sequencing
+EXT-0287	UM-0009			0.33				hydrated sample split into EXT-0406 and EXT-0430 before extracting for sequencing
+EXT-0290	UM-0027			0.66				hydrated sample split into EXT-0407 and EXT-0431 before extracting for sequencing
+EXT-0292	UM-0032			0.24				hydrated sample split into EXT-0408 and EXT-0432 before extracting for sequencing

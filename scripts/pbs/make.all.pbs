@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+#PBS -m abe
+#PBS -A schmidti_fluxm
+#PBS -q fluxm
+#PBS -l nodes=1:ppn=30,pmem=24gb
+#PBS -l walltime=02:00:00:00,qos=flux
+#PBS -j oe
+#PBS -V
+
+# TODO: Set targets here
+targets=all
+
+jobid=${PBS_JOBID%%.*}
+series=${PBS_JOBNAME}.${jobid}
+logfile=${series}.log
+usagefile=${series}.top
+planfile=${series}.plan
+
+procs=$(nproc)
+max_procs=$(expr ${procs})
+# Load goal is 1 processor fewer than available.
+load_average=$(expr ${procs} - 1 \| 1)
+
+cd $PBS_O_WORKDIR
+module load $modules
+source .venv/bin/activate
+tmpdir=$(mktemp -d /tmp/tmp.XXXXXX)
+
+makevars="MAX_PROCS=${max_procs} SQLITE_CACHE_MEMORY=100000000 TMPDIR=$tmpdir"
+echo "targets = " $targets | tee -a ${logfile}
+echo $PBS_O_WORKDIR | tee -a ${logfile}
+# Log the hardware
+echo "procs = " $procs \
+     "| load_average = " $load_average \
+     "| modules = " $modules \
+     "| makevars = " $makevars \
+     "| jobid = " $jobid \
+    | tee -a ${logfile}
+
+# Log a plan
+make -n ${makevars} ${targets} >> ${planfile}
+# Log CPU/Memory usage
+top -u $USER -b -d 60 >> ${usagefile} &
+# Run the real deal
+make --keep-going --jobs ${max_procs} \
+    ${makevars} \
+    ${targets} \
+    2>&1 | tee -a ${logfile}
+
+# Log status and exit.
+status=${PIPESTATUS[0]}
+echo Job Ended | tee -a ${logfile}
+exit ${status}
