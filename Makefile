@@ -868,30 +868,29 @@ build/%.ipynb: nb/%.ipynb
 # build/notebook.ipynb: res/results.tsv
 
 # Extra requirements for notebooks
-build/2018-03-19_s247_tree.ipynb: \
+build/bacteroidales_phylo.ipynb: \
         res/s247_of_interest.wrefs.press.realign.mask.uniq.nwk \
         meta/misc/bacteroidales_family_designation.tsv
 
-build/2018-03-13_bayesian_survival_path_analysis.ipynb: res/C2013.results.db
-build/2018-03-14_survival_analysis-supplement.ipynb: res/C2013.results.db
-build/2018-03-16_paper_results.ipynb: res/C2013.results.db
-build/2018-03-21_otu_details_supplemental.ipynb: res/C2013.results.db
-build/2018-03-21_s247_phylotypes.ipynb: res/C2013.results.db
+build/survival_analysis.ipynb: res/C2013.results.db
+build/main_results.ipynb: res/C2013.results.db
+build/otu_details.ipynb: res/C2013.results.db
+build/muribac_uniq.ipynb: res/C2013.results.db
 
 # Figure building for doc/paper_draft.*
-fig/comm_pcoa.png fig/comm_pcoa.pdf: build/2018-03-16_paper_results.ipynb
-fig/dominant_otus_box.png fig/dominant_otus_box.pdf: build/2018-03-16_paper_results.ipynb
-fig/scfa_box.png fig/scfa_box.pdf: build/2018-03-16_paper_results.ipynb
-fig/metab_corr.png fig/metab_corr.pdf: build/2018-03-16_paper_results.ipynb
+fig/comm_pcoa.png fig/comm_pcoa.pdf: build/main_results.ipynb
+fig/dominant_otus_box.png fig/dominant_otus_box.pdf: build/main_results.ipynb
+fig/scfa_box.png fig/scfa_box.pdf: build/main_results.ipynb
+fig/metab_corr.png fig/metab_corr.pdf: build/main_results.ipynb
 # This figure can't be made without the full data:
-# fig/survival_sample.png fig/survival_sample.pdf: build/2018-03-16_paper_results.ipynb
+# fig/survival_sample.png fig/survival_sample.pdf: build/main_results.ipynb
 
 # Supplemental figures and tables
-fig/s247_tree.png fig/s247_tree.pdf: build/2018-03-19_s247_tree.ipynb
-fig/s247_phylotypes.png fig/s247_phylotypes.pdf: build/2018-03-21_s247_phylotypes.ipynb
-fig/scfa_box_supplement.png fig/scfa_box_supplement.pdf: build/2018-03-16_paper_results.ipynb
-fig/otu_details.xlsx: build/2018-03-21_otu_details.supplemental.ipynb
-fig/phreg_residuals.png fig/survival_predict.png fig/phreg_residuals.pdf fig/survival_predict.pdf: build/2018-03-14_survival_analysis-supplement.ipynb
+fig/s247_tree.png fig/s247_tree.pdf: build/bacteroidales_phylo.ipynb
+fig/s247_phylotypes.png fig/s247_phylotypes.pdf: build/muribac_uniq.ipynb
+fig/scfa_box_supplement.png fig/scfa_box_supplement.pdf: build/main_results.ipynb
+build/otu_details.xlsx: build/otu_details.ipynb
+fig/phreg_residuals.png fig/survival_predict.png fig/phreg_residuals.pdf fig/survival_predict.pdf: build/survival_analysis.ipynb
 
 # Generic Recipes {{{2
 
@@ -901,45 +900,10 @@ fig/%.pdf: doc/static/%.svg
 fig/acarbose_structure.pdf: doc/static/acarbose_structure.svg
 	svg2pdf -h 50 $< $@
 
-
-build/%.html: doc/%.md ${BIB_FILE}
-	pandoc --from markdown --to html5 \
-        --filter pandoc-crossref --highlight-style pygments \
-        --standalone --self-contained --mathjax=${MATHJAX} \
-        --table-of-contents --toc-depth=4 \
-        --css doc/static/main.css --bibliography=${P2} \
-        -s ${P1} -o $@
-
-build/%.docx: doc/%.md ${BIB_FILE} doc/static/example_style.docx
-	pandoc --from markdown --to docx \
-        --filter pandoc-crossref --highlight-style pygments \
-        --bibliography=${BIB_FILE} \
-        --reference-doc=${P3} \
-        -o $@ ${P1}
-
-build/%.tex: doc/%.md ${BIB_FILE} doc/latex.template
-	pandoc --from markdown --to latex \
-        --filter pandoc-crossref --highlight-style pygments \
-        --standalone --template ${P3} \
-        --natbib --bibliography ${BIB_FILE} \
-        --wrap=preserve -t latex \
-        -o $@ ${P1}
-
 build/%.pdf: doc/%.tex ${BIB_FILE}
 	latexmk -lualatex -outdir=${@D} -auxdir=${@D} -bibtex $<
 
-build/%.pdf: build/%.tex ${BIB_FILE}
-	latexmk -lualatex -outdir=${@D} -auxdir=${@D} -bibtex $<
-
 # Manuscripts {{{2
-build/%.png2pdf.tex: build/%.tex
-	sed -e 's:\.png:.pdf:' \
-        -e 's:α:$$\\alpha$$:g' \
-        -e 's:μ\([A-Za-z0-9]*\):$$\\mu$${\1}:g' \
-        -e 's:β:$$\\beta$$:g' \
-        -e 's:ρ:$$\\rho$$:g' \
-        < $^ > $@
-
 preprint_figure_basenames := \
         survival_sample \
         comm_pcoa \
@@ -952,8 +916,5 @@ preprint_figure_basenames := \
         phreg_residuals \
         survival_predict
 
-build/preprint.png2pdf.pdf: \
+build/preprint.pdf: \
         $(patsubst %,fig/%.pdf,${preprint_figure_basenames})
-
-build/preprint.html build/preprint.docx build/preprint.pdf: \
-        $(patsubst %,fig/%.png,${preprint_figure_basenames})

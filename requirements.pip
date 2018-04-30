@@ -5,6 +5,7 @@ biopython
 pandas
 seaborn
 numpy
+scipy
 scikit-bio
 scikit-learn
 lifelines
@@ -16,5 +17,3 @@ rpy2
 tqdm
 daff
 git+https://github.com/bsmith89/compbio-scripts.git#egg=sequtils
-networkx==1.9.1
-git+https://github.com/pygraphviz/pygraphviz.git#egg=pygraphviz
