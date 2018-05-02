@@ -32,41 +32,38 @@ ${HELP_TRGTS}:
 define PROJECT_HELP_MSG
 
 ================================
- Analysis Makefile Documentation
+ Pipeline Documentation
 ================================
 
 SYNOPSIS
-    Run project operations using make commands.
+    Key rules defined in Makefile
 
 TARGETS
     all
-        Generate all. (By default this includes all figures,
-        results, and documentation based on user-defined recipes.)
-
-    docs
-        Compile markdown files (e.g. NOTE.md, TEMPLATE.md) into HTML using
-        Pandoc.
-
-    figs
-        Carry out the pipeline to ultimately generate figures of the results.
+        Synonym for `make res docs figs`
 
     res
-        Carry out the pipeline to ultimately generate quantitative results files.
+        Build preloaded results database
 
-    help
-        Show this help message.
+    docs
+        Build preprint
+
+    figs
+        Build auxiliary figures (HPLC calibration checks)
 
     init
         Initialize the project
             (1) data-dirs
-            (2) configure git to automatically clean IPython notebooks;
-
-    python-reqs
-        Install all python requirements from `requirements.pip` to the venv.
+            (2) configure git (e.g. to automatically clean IPython notebooks)
+            (3) THIS STEP DOES NOT INSTALL SOFTWARE
 
     data-dirs
         Create all data directories. Directories set in $${DATA_DIRS}.
         (${DATA_DIRS})
+
+    help
+        Show this help message.
+
 
 EXAMPLES
     make init  # Initialize the newly cloned project.
@@ -134,9 +131,8 @@ MAX_PROCS ?= $(shell nproc)
 
 # Phony targets {{{3
 .PHONY: figs res
-res: res/C2013.results.db seq/C2013.rrs.procd.clust.reps.afn
-build: build/otu_details.xlsx
-docs: build/paper_draft.docx
+res: res/C2013.results.db
+docs: build/preprint.pdf build/otu_details.xlsx
 figs: fig/hplc.calibration.acetate.pdf \
       fig/hplc.calibration.butyrate.pdf \
       fig/hplc.calibration.glucose.pdf \
@@ -145,7 +141,7 @@ figs: fig/hplc.calibration.acetate.pdf \
       fig/hplc.calibration.succinate.pdf
 
 # What files are generated on `make all`?
-all: docs figs res build
+all: docs figs res
 
 # Documentation targets {{{3
 .PHONY: docs
@@ -731,9 +727,6 @@ res/split/2016-01-08_b.%.lcs_export.txt: raw/hplc/proto/2016-01-08_b.%.lcs_expor
 
 res/split/2016-05-11.%.lcs_export.txt: raw/hplc/proto/2016-05-11.%.lcs_export.txt
 	sed '/2016-05-08_001\.lcd/d' < $< > $@
-
-res/split/2016-03-02.RI.lcs_export.txt: raw/hplc/proto/2016-03-02.RI.lcs_export.txt
-	sed 's:sialic acid:sialic_acid:' < $< > $@
 
 res/split/2016-03-10.RI.lcs_export.txt: raw/hplc/proto/2016-03-10.RI.lcs_export.txt
 	sed 's:sialic acid:sialic_acid:' < $< > $@

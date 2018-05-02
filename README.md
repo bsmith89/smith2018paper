@@ -7,28 +7,6 @@ code and metadata to reproduce results in "Changes in the gut microbiota and
 fermentation products associated with enhanced longevity in acarbose-treated
 mice".
 
-# Requirements
-
--   Python
-    -   See `requirements.pip`
--   R
-    -   vegan
-    -   survminer
-    -   DESeq2
-    -   survival
--   MOTHUR
--   FastTree
--   MUSCLE
--   ncbi-blast
--   sra-tools
--   SQLite3
--   GNU Make
--   LaTeX
--   Latexmk
--   curl
--   wget
--   git
-
 # Quickstart
 
 These instructions are for an ideal world.
@@ -46,6 +24,28 @@ it's worth a shot though, right?
 
 Errors when using these instructions probably indicate that software hasn't
 been installed correctly.
+
+# Requirements
+
+-   Python
+    -   See `requirements.pip`
+-   R
+    -   vegan (2.4-6)
+    -   survminer (0.4.2)
+    -   DESeq2 (1.18.1)
+    -   survival (2.41-3)
+-   MOTHUR (1.39.4)
+-   FastTree (2.1.10)
+-   MUSCLE (3.8.1551)
+-   ncbi-blast (2.7.1)
+-   sra-tools (2.8.2)
+-   SQLite3 (3.19.3)
+-   GNU Make (4.2.1)
+-   LaTeX (3.14159265-2.6-1.40.18)
+-   Latexmk (4.52c)
+-   curl
+-   wget
+-   git (2.7.2)
 
 # Abstract
 
