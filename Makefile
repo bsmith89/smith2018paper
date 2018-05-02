@@ -59,7 +59,11 @@ TARGETS
 
     data-dirs
         Create all data directories. Directories set in $${DATA_DIRS}.
-        (${DATA_DIRS})
+        (currently: ${DATA_DIRS})
+
+    clean
+        Remove (probably) unimportant files. Patterns set in $${CLEANUP}
+        (currently: ${CLEANUP})
 
     help
         Show this help message.
